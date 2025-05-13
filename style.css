@@ -27,7 +27,7 @@
     background-size: cover;     
     background-position: center; 
     background-repeat: no-repeat;
-    height: 550px;
+    height: 580px;
     color: #fff; 
     padding: 20px 0; 
     text-align: center; 
@@ -201,7 +201,7 @@
       height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #004080;
+
     }
     
     .speaker-info h3 {
@@ -253,7 +253,6 @@
       height: 120px;
       object-fit: cover;
       border-radius: 50%;
-      border: 3px solid #004080;
       margin-bottom: 10px;
     }
     
