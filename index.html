@@ -1,12 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<head>
+  <meta charset="UTF-8">
+  <title>VQualA: Visual Quality Assessment Competition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my GitHub page hosted at x.github.io</p>
+  <header>
+    <div class="container">
+      <h1>Visual Quality Assessment Competition (VQualA)</h1>
+      <p style="font-size: 2em;">ICCV 2025</p>
+    </div>
+</header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#sponsors">Sponsors</a></li> 
+        <li><a href="#cfp">Call for Papers</a></li> 
+        <li><a href="#challenges">Challenges</a></li> 
+        <li><a href="#speakers">Speakers</a></li> 
+        <li><a href="#dates">Dates</a></li> 
+        <li><a href="#organizers">Organizers</a></li> 
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    
+ <!-- Logo Image -->
+<div class="logo-container">
+  <img src="img/logo2.png" alt="VQualA Logo">
+</div>
+
+
+<section id="sponsors">
+  <h2>Sponsors</h2>
+  <div class="sponsor-container">
+    <img src="img/SnapInc.png" alt="Sponsor 1">
+    <img src="img/9INTSIG1.jpg" alt="Sponsor 2">
+  </div>
+</section>
+
+  
+<section id="cfp">
+  <h2>Call for Papers</h2>
+  <p>
+    Visual quality assessment plays a crucial role in computer vision, serving as a fundamental step in tasks such as image quality assessment (IQA), image super-resolution, document image enhancement, and video restoration. Traditional visual quality assessment techniques often rely on scalar metrics like Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index Measure (SSIM), which, while effective in certain contexts, fall short in capturing the perceptual quality experienced by human observers. This gap emphasizes the need for more perceptually aligned and comprehensive evaluation methods that can adapt to the growing demands of applications such as medical imaging, satellite remote sensing, immersive media, and document processing.
+
+In recent years, advancements in deep learning, generative models, and multimodal large language models (MLLMs) have opened up new avenues for visual quality assessment. These models offer capabilities that extend beyond traditional scalar metrics, enabling more nuanced assessments through natural language explanations, open-ended visual comparisons, and enhanced context awareness. With these innovations, VQA is evolving to better reflect human perceptual judgments, making it a critical enabler for next-generation computer vision applications.
+  <p>
+    The VQualA Workshop aims to bring together researchers and practitioners from academia and industry to discuss and explore the latest trends, challenges, and innovations in visual quality assessment. We welcome original research contributions addressing, but not limited to, the following topics:
+
+    <ul>
+      <li>Image and video quality assessment</li>
+      <li>Perceptual quality assessment techniques</li>
+      <li>Multi-modal quality evaluation (image, video, text)</li>
+      <li>Visual quality assessment for immersive media (VR/AR)</li>
+      <li>Document image enhancement and quality analysis</li>
+      <li>Quality assessment under adverse conditions (low light, weather distortions, motion blur)</li>
+      <li>Robust quality metrics for medical and satellite imaging</li>
+      <li>Perceptual-driven image and video super-resolution</li>
+      <li>Visual quality in restoration tasks (denoising, deblurring, upsampling)</li>
+      <li>Human-centric visual quality assessment</li>
+      <li>Learning-based quality assessment models (CNNs, Transformers, MLLMs)</li>
+      <li>Cross-domain visual quality adaptation</li>
+      <li>Benchmarking and datasets for perceptual quality evaluation</li>
+      <li>Integration of large language models for quality explanation and assessment</li>
+      <li>Open-ended comparative assessments with natural language reasoning</li>
+      <li>Emerging applications of VQA in autonomous driving, surveillance, and smart cities</li>
+    </ul>
+    </p>
+</section>
+
+  <section id="challenges">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Challenges</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              background-color: #f8f9fa;
+              margin: 0;
+              padding: 20px;
+          }
+          .challenge-list {
+              list-style: none;
+              padding: 0;
+          }
+          .challenge-item {
+              background-color: #ffffff;
+              margin-bottom: 15px;
+              padding: 15px;
+              border-radius: 8px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+              transition: transform 0.2s;
+          }
+          .challenge-item:hover {
+              transform: translateY(-3px);
+          }
+          .challenge-item a {
+              text-decoration: none;
+              color: #007bff;
+              font-size: 1.2em;
+              font-weight: bold;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <h2>VQualA 2025 Challenges</h2>
+  
+  <ul class="challenge-list">
+      <li class="challenge-item">
+          <a href="https://cd-athena.github.io/VQualA/" target="_blank">ISRGen-QA</a>
+      </li>
+      <li class="challenge-item">
+          <a href="https://cd-athena.github.io/VQualA/" target="_blank">DIQA-5000</a>
+      </li>
+      <li class="challenge-item">
+          <a href="https://cd-athena.github.io/VQualA/" target="_blank">EVQA-SnapUGC</a>
+      </li>
+      <li class="challenge-item">
+          <a href="https://cd-athena.github.io/VQualA/" target="_blank">Co-Instruct-690K</a>
+      </li>
+  </ul>
+  <h> One needs to check the corresponding competition page(s) in order to learn more about and to register to access the data and participate in the challenge(s) of interest.</h>
+  
+  </body>
+</section>
+
+    <section id="speakers">
+      <h2>Confirmed Speakers</h2>
+      <div class="speakers-container">
+        <div class="speaker">
+          <img src="img/alan-bovik.webp" alt="Alan Bovik">
+          <div class="speaker-info">
+            <h3><a href="https://www.ece.utexas.edu/people/faculty/alan-bovik" target="_blank">Prof. Alan Bovik</a></h3>
+            <p>
+              Prof. <strong><a href="https://www.ece.utexas.edu/people/faculty/alan-bovik" target="_blank">Alan Bovik</a></strong> (HonFRPS) holds the Cockrell Family Endowed Regents Chair in Engineering in the Chandra Family Department of Electrical and Computer Engineering in the Cockrell School of Engineering at The University of Texas at Austin, where he is Director of the Laboratory for Image and Video Engineering (LIVE). He is a faculty member in the Department of Electrical and Computer Engineering, the Wireless Networking and Communication Group, and the Institute for Neuroscience. His research interests include digital television, digital photography, visual perception, social media, and image and video processing. His work broadly focuses on creating new theories and algorithms that allow for the perceptually optimized streaming and sharing of visual media. The outcomes of his work have the benefits of ensuring the visual satisfaction of billions of viewers worldwide, while substantially reducing global bandwidth consumption. He has published over 1,000 technical articles in these areas. His publications have been cited more than 175,000 times in the literature, his H-index is above 135, and he is listed as a Highly-Cited Researcher by The Web of Science Group. His several books include the Handbook of Image and Video Processing (Academic Press, 2000, 2005), Modern Image Quality Assessment (2006), and the companion volumes The Essential Guides to Image and Video Processing (Academic Press, 2009).
+            </p>
+          </div>
+        </div>
+    
+        <div class="speaker">
+          <img src="img/balu-adsumilli.png" alt="Balu Adsumilli">
+          <div class="speaker-info">
+            <h3><a href="https://research.google/people/107756/?&type=google" target="_blank">Dr. Balu Adsumilli</a></h3>
+            <p>
+              Dr. <strong><a href="https://research.google/people/107756/?&type=google" target="_blank">Balu Adsumilli</a></strong> (IEEE Fellow) is the Head of Media Algorithms group at YouTube/Google, where he and his team research and develop algorithms to transform the uploaded videos to formats played across all your devices. Over the past years, he was instrumental in building and scaling technologies in the areas of video processing, computer vision, video compression, and video quality, which garnered Two Technology and Engineering Emmy awards for Google. Prior to YouTube, he was the Director of Advanced Technology at GoPro, where he led the Camera Architecture, and the Advanced Software teams, and developed their ProTune mode in collaboration with ACES and Technicolor. This paved the way for GoPro cameras capturing Industry neutral formats, and enabled their widespread applicability in the movie and television industry. Dr. Adsumilli serves on the board of the Television Academy, on the Visual Effects Society board, on the NATAS technical committee, on the IEEE Multimedia Signal Processing (MMSP) Technical Committee, the IEEE Image, Video, Multidimensional Signal Processing (IVMSP) Technical Committee, and on ACM Mile High Video Steering Committee. He has co-authored 125+ technical publications and holds 200+ US patents. He is on TPCs and organizing committees for various conferences and organized numerous workshops. He is a Fellow of IEEE, and an active member of ACM, SMPTE, VES, SPIE, and the Internet Society. He received his PhD from the University of California Santa Barbara, and masters from the University of Wisconsin Madison.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="dates">
+      <h2>Important Dates (TBU)</h2>
+      <ul>
+
+    
+       The participants’ submissions will be evaluated on the test set based on the metrics presented in the related paper for the respective tasks, and the top 3 teams for each task will be invited to present their posters during the workshop. 
+        <h3>Competition Timeline</h3>
+        <ul>
+        <li><strong>Competition starts:</strong> 01 June 2025</li>
+        <li><strong>Competition submission deadline:</strong> 15 July 2025</li>
+        <li><strong>Release of Competition results and winners:</strong> 30 July 2025</li>
+      </ul>
+
+        <!-- <h3>Awards</h3>
+        <ul>
+        <li><strong>First Prize:</strong> $1500</li>
+        <li><strong>Second Prize:</strong> $1000</li>
+        <li><strong>Third Prize:</strong> $500</li> -->
+      </ul>
+      </ul>
+
+    </section>
+    
+    
+    <section id="organizers">
+      <h2>List of Organizers</h2>
+      <div class="organizers-grid">
+    
+        <div class="organizer">
+          <img src="img/Wei Zhou.png" alt="Chris Zhou">
+          <div class="org-info">
+            <strong>Chris Wei Zhou</strong><br>
+            Assistant Professor, Cardiff University, UK<br>
+            <a href="mailto:zhouw26@cardiff.ac.uk">zhouw26@cardiff.ac.uk</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Jian Wang.png" alt="Jian Wang">
+          <div class="org-info">
+            <strong>Jian Wang</strong><br>
+            Staff Research Scientist, Snap Research, USA<br>
+            <a href="mailto:jwang4@snap.com">jwang4@snap.com</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Sishuo Ma.png" alt="Sizhuo Ma">
+          <div class="org-info">
+            <strong>Sizhuo Ma</strong><br>
+            Senior Research Scientist, Snap Research, USA<br>
+            <a href="mailto:sma@snap.com">sma@snap.com</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Xiongkuo Min.png" alt="Xiongkuo Min">
+          <div class="org-info">
+            <strong>Xiongkuo Min</strong><br>
+            Associate Professor, Shanghai Jiao Tong University, China<br>
+            <a href="mailto:minxiongkuo@sjtu.edu.cn">minxiongkuo@sjtu.edu.cn</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Guangtao Zhai.png" alt="Guangtao Zhai">
+          <div class="org-info">
+            <strong>Guangtao Zhai</strong><br>
+            Professor, Shanghai Jiao Tong University, China<br>
+            <a href="mailto:zhaiguangtao@sjtu.edu.cn">zhaiguangtao@sjtu.edu.cn</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Zhengzhong Tu.png" alt="Zhengzhong Tu">
+          <div class="org-info">
+            <strong>Zhengzhong Tu</strong><br>
+            Assistant Professor, Texas A&amp;M University, USA<br>
+            <a href="mailto:tzz@tamu.edu">tzz@tamu.edu</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Hadi Amirpour.png" alt="Hadi Amirpour">
+          <div class="org-info">
+            <strong>Hadi Amirpour</strong><br>
+            Assistant Professor, University of Klagenfurt, Austria<br>
+            <a href="mailto:hadi.amirpour@aau.at">hadi.amirpour@aau.at</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Shiqi Wang.png" alt="Shiqi Wang">
+          <div class="org-info">
+            <strong>Shiqi Wang</strong><br>
+            Associate Professor, City University of Hong Kong<br>
+            <a href="mailto:shiqwang@cityu.edu.hk">shiqwang@cityu.edu.hk</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Hanwei Zhu.png" alt="Hanwei Zhu">
+          <div class="org-info">
+            <strong>Hanwei Zhu</strong><br>
+            Research Scientist, Nanyang Technological University, Singapore<br>
+            <a href="mailto:hanwei.zhu@ntu.edu.sg">hanwei.zhu@ntu.edu.sg</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Yixiao Li.png" alt="Yixiao Li">
+          <div class="org-info">
+            <strong>Yixiao Li</strong><br>
+            PhD student, Cardiff University, UK<br>
+            <a href="mailto:liy369@cardiff.ac.uk">liy369@cardiff.ac.uk</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Fan_Huang.png" alt="Fan Huang">
+          <div class="org-info">
+            <strong>Fan Huang</strong><br>
+            PhD student, Shanghai Jiao Tong University, China<br>
+            <a href="mailto:huangfan@sjtu.edu.cn">huangfan@sjtu.edu.cn</a>
+          </div>
+        </div>
+    
+        <div class="organizer">
+          <img src="img/Shuo_Xing.png" alt="Shuo Xing">
+          <div class="org-info">
+            <strong>Shuo Xing</strong><br>
+            PhD student, Texas A&amp;M University, USA<br>
+            <a href="mailto:shuoxing@tamu.edu">shuoxing@tamu.edu</a>
+          </div>
+        </div>
+
+        <div class="organizer">
+          <img src="img/Fengjun_Guo.png" alt="Fengjun Guo">
+          <div class="org-info">
+            <strong>Fengjun_Guo</strong><br>
+            R&D Director,INTSIG Information Co. Ltd, China<br>
+            <a href="mailto:fengjun_guo@intsig.net">fengjun_guo@intsig.net</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+    
+
+
+  </div>
+  <footer>
+    <p>&copy; 2025 VQualA Workshop Organizers</p>
+  </footer>
 </body>
 </html>

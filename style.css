@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Quality Assessment</title>
+  
+  <!-- 👇 Just add your CSS here -->
+  <style>
+  /* General Page Styling */
+  body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6; 
+    color: #333; 
+  }
+  .container { 
+    max-width: 960px; 
+    margin: auto; 
+    padding: 20px; 
+  }
+
+  /* Header with Background Image */
+  header { 
+    background-image: url('img/background.jpg'); /* Path to your image */
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 900px;
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 { 
+    margin: 0; 
+    font-size: 2.5em; 
+    background-color: rgba(0, 0, 0, 0.3); /* Optional dark overlay */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  /* Navigation Bar */
+  nav ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    background: #eaeaea; 
+  }
+  nav li { 
+    margin: 5px 10px; 
+  }
+  nav a { 
+    text-decoration: none; 
+    color: #004080; 
+    font-weight: bold; 
+  }
+
+  /* Sections */
+  section { 
+    margin: 40px 0; 
+  }
+  section h2 { 
+    border-bottom: 2px solid #004080; 
+    padding-bottom: 5px; 
+  }
+
+  /* Table Styling */
+  .table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+  }
+  .table th, .table td { 
+    border: 1px solid #ccc; 
+    padding: 8px; 
+    text-align: left; 
+  }
+
+  /* Lists */
+  ul, ol { 
+    margin: 10px 0 10px 20px; 
+  }
+
+  /* Footer Styling */
+  footer { 
+    text-align: center; 
+    margin: 40px 0; 
+    color: #777; 
+    font-size: 0.9em; 
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    nav ul { 
+      flex-direction: column; 
+    }
+  }
+
+  #sponsors {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .sponsor-container {
+    display: flex;
+    justify-content: center;  /* Centers the images horizontally */
+    gap: 20px;                /* Adds space between images */
+    margin-bottom: 20px;
+  }
+
+  .sponsor-container img {
+    height: 200px;            /* Adjust the size as needed */
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    transition: transform 0.3s;  /* Smooth hover effect */
+  }
+
+  .sponsor-container img:hover {
+    transform: scale(1.05);   /* Slightly enlarge on hover */
+  }
+
+
+    #topics {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #topics p {
+      text-align: justify;
+    }
+
+    #topics ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #topics li {
+      margin-bottom: 1rem;
+    }
+
+    details {
+      background-color: #f9f9f9;
+      padding: 0.8rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    summary::before {
+      content: "▶ ";
+      display: inline-block;
+      margin-right: 5px;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    details p {
+      text-align: justify;
+    }
+
+    #speakers {
+      margin: 40px 0;
+    }
+    
+    .speakers-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .speaker {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    .speaker img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #004080;
+    }
+    
+    .speaker-info h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.4em;
+    }
+    
+    .speaker-info a {
+      text-decoration: none;
+      color: #004080;
+    }
+    
+    .speaker-info p {
+      margin: 0;
+      text-align: justify;
+    }
+    
+    @media (max-width: 600px) {
+      .speaker {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .speaker-info p {
+        text-align: justify;
+      }
+    }
+    
+    #organizers {
+      margin: 60px 0;
+    }
+    
+    .organizers-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    
+    .organizer {
+      width: 200px;
+      text-align: center;
+    }
+    
+    .organizer img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #004080;
+      margin-bottom: 10px;
+    }
+    
+    .org-info {
+      font-size: 0.9em;
+    }
+    
+    .org-info a {
+      color: #004080;
+      text-decoration: none;
+      display: block;
+      margin-top: 6px;
+      font-size: 0.85em;
+      word-break: break-word;
+    }
+    
+   
+  .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo-container img {
+    height: 200px;   /* Increase height */
+    width: auto;     /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+  }
+
+    
+  </style>
+
+  
+
+</head>
+<body>
+  <!-- Your content goes here -->
+</body>
+</html>
