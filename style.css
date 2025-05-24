@@ -97,47 +97,55 @@
     font-size: 0.9em; 
   }
 
-  /* Responsive Design */
-@media (max-width: 200px) {
-  nav ul { 
-    flex-direction: column; 
+  #sponsors {
+    margin-top: 40px;
+    text-align: center;
   }
-
+  
   .sponsor-container {
-    flex-direction: column;    /* Stack logos vertically */
-    align-items: center;       /* Center logos horizontally */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Add this */
   }
-
+  
+  .sponsor-container a {
+    display: block;
+  }
+  
   .sponsor-container img {
-    height: auto;              /* Adjust height for responsiveness */
-    width: 80%;                /* Make images take up most of the width */
-    max-width: 300px;          /* Optional: set a max width */
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
   }
-}
+  
+  .sponsor-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 600px) {
+    .sponsor-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sponsor-container img {
+      width: 80%;
+      height: auto;
+      max-width: 300px;
+    }
+  }
+  
 
-#sponsors {
-  margin-top: 40px;
-  text-align: center;
-}
 
-.sponsor-container {
-  display: flex;
-  justify-content: center;     /* Centers the images horizontally */
-  gap: 20px;                   /* Adds space between images */
-  margin-bottom: 20px;
-}
 
-.sponsor-container img {
-  height: 200px;               /* Adjust the size as needed */
-  width: auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  transition: transform 0.3s; /* Smooth hover effect */
-}
 
-.sponsor-container img:hover {
-  transform: scale(1.05);      /* Slightly enlarge on hover */
-}
+
+
 
 
 
