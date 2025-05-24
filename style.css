@@ -98,35 +98,47 @@
   }
 
   /* Responsive Design */
-  @media (max-width: 600px) {
-    nav ul { 
-      flex-direction: column; 
-    }
-  }
-
-  #sponsors {
-    margin-top: 40px;
-    text-align: center;
+@media (max-width: 600px) {
+  nav ul { 
+    flex-direction: column; 
   }
 
   .sponsor-container {
-    display: flex;
-    justify-content: center;  /* Centers the images horizontally */
-    gap: 20px;                /* Adds space between images */
-    margin-bottom: 20px;
+    flex-direction: column;    /* Stack logos vertically */
+    align-items: center;       /* Center logos horizontally */
   }
 
   .sponsor-container img {
-    height: 200px;            /* Adjust the size as needed */
-    width: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    transition: transform 0.3s;  /* Smooth hover effect */
+    height: auto;              /* Adjust height for responsiveness */
+    width: 80%;                /* Make images take up most of the width */
+    max-width: 300px;          /* Optional: set a max width */
   }
+}
 
-  .sponsor-container img:hover {
-    transform: scale(1.05);   /* Slightly enlarge on hover */
-  }
+#sponsors {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sponsor-container {
+  display: flex;
+  justify-content: center;     /* Centers the images horizontally */
+  gap: 20px;                   /* Adds space between images */
+  margin-bottom: 20px;
+}
+
+.sponsor-container img {
+  height: 200px;               /* Adjust the size as needed */
+  width: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.sponsor-container img:hover {
+  transform: scale(1.05);      /* Slightly enlarge on hover */
+}
+
 
 
     #topics {
