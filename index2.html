@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VQualA 2025 — Program (Oct 19, 2025, 1–5 PM HST)</title>
+  <meta name="description" content="Program schedule for VQualA 2025 on Sunday, October 19, 2025 — Hybrid (in-person & online)." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --card: #111318;
+      --muted: #a5adb8;
+      --text: #e9eef5;
+      --brand: #6ee7ff;
+      --brand-2: #80ffea;
+      --accent: #b3ff8f;
+      --ring: #2a2f3a;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg: #f7fafc;
+        --card: #ffffff;
+        --muted: #4a5568;
+        --text: #0f172a;
+        --brand: #0077ff;
+        --brand-2: #00b7d6;
+        --accent: #0bb87a;
+        --ring: #e5e7eb;
+      }
+    }
+    *{ box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(110,231,255,.15), transparent 60%),
+                  radial-gradient(1200px 800px at 120% 10%, rgba(128,255,234,.12), transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .container{ max-width: 1000px; margin: 0 auto; padding: 24px; }
+    header{
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: saturate(120%) blur(8px);
+      background: color-mix(in oklab, var(--bg) 86%, transparent);
+      border-bottom: 1px solid var(--ring);
+    }
+    header .inner{ display:flex; gap:16px; align-items:center; justify-content:space-between; padding: 14px 24px; }
+    .title{ font-weight: 800; letter-spacing: -0.02em; font-size: clamp(20px, 2.2vw, 30px); }
+    .badge{ display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid var(--ring); background: linear-gradient(180deg, color-mix(in oklab, var(--card) 90%, transparent), color-mix(in oklab, var(--card) 70%, transparent)); }
+    .badge svg{ width:16px; height:16px; }
+    .hero{ padding: 32px 24px 8px; display:grid; gap:14px; }
+    .meta{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+    .meta .pill{ padding:8px 12px; border-radius:999px; border:1px dashed var(--ring); font-size:13px; }
+    .controls{ display:flex; gap:12px; align-items:center; }
+    .toggle{ display:inline-flex; align-items:center; gap:10px; font-size:14px; }
+    .switch{ position: relative; display:inline-block; width: 44px; height: 26px; }
+    .switch input{ opacity:0; width:0; height:0; }
+    .slider{ position:absolute; cursor:pointer; inset:0; background:#3b3f47; transition:.2s; border-radius:999px; box-shadow: inset 0 0 0 1px var(--ring); }
+    .slider:before{ content:""; position:absolute; height:20px; width:20px; left:3px; top:3px; background:white; border-radius:50%; transition:.2s; }
+    input:checked + .slider{ background: linear-gradient(90deg, var(--brand), var(--brand-2)); }
+    input:checked + .slider:before{ transform: translateX(18px); }
+
+    nav{ display:flex; flex-wrap:wrap; gap:8px; margin: 8px 0 20px; }
+    nav a{ text-decoration:none; color:inherit; }
+    nav .nav-pill{ border:1px solid var(--ring); padding:8px 12px; border-radius:12px; font-size:14px; }
+
+    .section{ background: color-mix(in oklab, var(--card) 92%, transparent); border:1px solid var(--ring); border-radius:20px; padding:18px; margin: 18px 0; box-shadow: 0 4px 20px rgba(0,0,0,.1); }
+    .section h2{ margin:6px 0 2px; font-size: clamp(18px, 2vw, 22px); }
+    .time{ font-weight:600; color: var(--brand-2); letter-spacing: .02em; }
+    .slot{ display:grid; gap:10px; border:1px solid var(--ring); border-radius:16px; padding:14px; margin:12px 0; background: linear-gradient(180deg, color-mix(in oklab, var(--card) 95%, transparent), color-mix(in oklab, var(--card) 85%, transparent)); }
+    .slot header{ position: initial; backdrop-filter:none; background:none; border:0; }
+    .slot-title{ font-weight:700; font-size: clamp(16px, 1.7vw, 18px); }
+    .subtitle{ color: var(--muted); font-size: 14px; }
+
+    details{ border: 1px dashed var(--ring); border-radius: 12px; padding: 10px 12px; background: color-mix(in oklab, var(--card) 96%, transparent); }
+    details summary{ cursor: pointer; font-weight: 600; }
+
+    ul.paper-list{ margin:8px 0 0 18px; }
+    ul.paper-list li{ margin: 8px 0; }
+
+    footer{ padding: 40px 24px; color: var(--muted); text-align:center; }
+
+    .grid-2{ display:grid; grid-template-columns: 1fr; gap:12px; }
+    @media (min-width: 800px){ .grid-2{ grid-template-columns: 1.2fr .8fr; } }
+
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+    /* --- Enhancements: timeline, animations, buttons, print --- */
+    :root{ --radius:20px; }
+    html{ scroll-behavior:smooth; }
+
+    .title .brand-gradient{ background: linear-gradient(90deg, var(--brand), var(--accent)); -webkit-background-clip:text; background-clip:text; color: transparent; }
+
+    .nav-pill.active{ outline:2px solid color-mix(in oklab, var(--brand) 70%, var(--ring)); box-shadow:0 0 0 6px color-mix(in oklab, var(--brand) 12%, transparent) inset; }
+
+    /* Timeline look */
+    .tl{ position:relative; padding-left:56px; }
+    .tl::before{ content:""; position:absolute; left:24px; top:0; bottom:0; width:2px; background:linear-gradient(180deg, color-mix(in oklab, var(--brand) 60%, transparent), color-mix(in oklab, var(--brand-2) 50%, transparent)); border-radius:2px; opacity:.5; }
+    .tl::after{ content:""; position:absolute; left:16px; top:12px; width:18px; height:18px; border-radius:50%; background: radial-gradient(circle at 35% 35%, var(--brand), var(--brand-2)); box-shadow:0 0 0 6px color-mix(in oklab, var(--brand) 20%, transparent); }
+
+    .slot{ transition: transform .2s ease, box-shadow .2s ease; }
+    .slot:hover{ transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,.18); }
+
+    /* Buttons */
+    .btn{ display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; border:1px solid var(--ring); text-decoration:none; color:inherit; background: linear-gradient(180deg, color-mix(in oklab, var(--card) 92%, transparent), color-mix(in oklab, var(--card) 76%, transparent)); font-weight:600; }
+    .btn:hover{ box-shadow:0 6px 18px rgba(0,0,0,.16); transform: translateY(-1px); }
+
+    /* Back to top */
+    .to-top{ position:fixed; right:20px; bottom:24px; z-index:20; opacity:0; pointer-events:none; transition: opacity .25s ease, transform .2s ease; }
+    .to-top.show{ opacity:1; pointer-events:auto; }
+
+    /* Subtle fade-in */
+    @keyframes fadeUp{ from{ opacity:0; transform: translateY(8px);} to{ opacity:1; transform:none;} }
+    .section{ animation: fadeUp .5s ease both; }
+
+    /* Print */
+    @media print{
+      header,.controls,.to-top, nav{ display:none !important; }
+      .section{ break-inside: avoid; box-shadow:none; border-color:#ddd; }
+      body{ background:#fff; color:#000; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner container">
+      <div class="title"><span class="brand-gradient">VQualA 2025</span> — Program</div>
+      <div class="controls">
+        <span class="badge" title="Hybrid: in-person & online" aria-label="Hybrid format">
+          <!-- link icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.9 12a5 5 0 015-5h3v2h-3a3 3 0 000 6h3v2h-3a5 5 0 01-5-5zm7-1h3a3 3 0 110 6h-3v-2h3a1 1 0 000-2h-3v-2zm-1-4h4v2h-4V7z"/></svg>
+          Hybrid
+        </span>
+        <label class="toggle" title="Toggle local time">
+          <span>Show in my local time</span>
+          <span class="switch">
+            <input type="checkbox" id="localToggle" aria-label="Show times in my local timezone" />
+            <span class="slider"></span>
+          </span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="meta">
+        <div class="pill" id="date-line">Date: <strong>Sunday, October 19, 2025</strong></div>
+        <div class="pill" id="time-line">Time: <strong>1:00 PM – 5:15 PM</strong> <span class="tz">HST</span></div>
+        <div class="pill">Format: <strong>Hybrid (in-person & online)</strong></div>
+      </div>
+      <nav aria-label="Quick navigation">
+        <a class="nav-pill" href="#opening">Opening</a>
+        <a class="nav-pill" href="#invited">Invited Talk</a>
+        <a class="nav-pill" href="#ps1">Paper Session I</a>
+        <a class="nav-pill" href="#ps2">Paper Session II</a>
+        <a class="nav-pill" href="#challenge">Challenge Highlights</a>
+        <a class="nav-pill" href="#closing">Closing</a>
+      </nav>
+    </section>
+
+    <!-- Opening Remarks -->
+    <section id="opening" class="section tl">
+      <div class="time" data-start="2025-10-19T13:00:00-10:00" data-end="2025-10-19T13:10:00-10:00">1:00 – 1:10 PM HST</div>
+      <h2>Opening Remarks</h2>
+      <p class="subtitle">Overview of VQualA 2025 goals and structure</p>
+    </section>
+
+    <!-- Invited Talk -->
+    <section id="invited" class="section tl">
+      <div class="time" data-start="2025-10-19T13:10:00-10:00" data-end="2025-10-19T13:40:00-10:00">1:10 – 1:40 PM HST</div>
+      <div class="slot">
+        <div class="slot-title">Invited Talk — Dr. Junfeng He (Research Scientist, Google)</div>
+        <p class="subtitle"><strong>Title:</strong> Evaluate and Improve AIGC via Modeling Human Feedback and Behavior</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>In this talk, I will present our recent work on evaluation and post-training of AIGC. In particular, I will talk about how to build an rich human feedback (auto-rater) model to predict raters’ rich feedback for generated images, which can serve as an interpretable AIGC evaluation and reward model. Moreover, I will show how to improve image generation models via fine-tuning with our auto-rater model predictions, e.g. achieving region-aware fine-tuning for T2I models to fix problematic regions (CVPR 2025 paper), or fine-tuning with multi rewards. Finally, we will also discuss a rich human behavior model across various kinds of visual content, and give some example about how to use it to improve visual content for better user experience.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Paper Session I -->
+    <section id="ps1" class="section tl">
+      <div class="time" data-start="2025-10-19T13:40:00-10:00" data-end="2025-10-19T14:50:00-10:00">1:40 – 2:50 PM HST</div>
+      <h2>Paper Session I — Image and Video Quality Assessment</h2>
+      <p class="subtitle">Each: 8 min talk + 2 min Q&amp;A</p>
+      <ul class="paper-list">
+        <li><strong>AIGIQA-4K:</strong> A Perceptual Quality Assessment Database for Both Text-to-Image and Image-to-Image AI-Generated Images</li>
+        <li><strong>AIGVQA:</strong> A Unified Framework for Multi-Dimensional Quality Assessment of AI-Generated Video</li>
+        <li><strong>Understanding Perceptual Quality in CCTV Images:</strong> A Benchmark Dataset and Entropy-based Insights</li>
+        <li><strong>Perceptual Classifiers:</strong> Detecting Generative Images using Perceptual Features</li>
+        <li><strong>Hybrid Vision Transformer and Convolutional Neural Network</strong> for Super-Resolution Image Quality Assessment</li>
+        <li><strong>DeQA-Doc:</strong> Adapting DeQA-Score to Document Image Quality Assessment</li>
+        <li><strong>Better Supervised Fine-tuning for VQA:</strong> Integer-Only Loss</li>
+      </ul>
+      <div class="slot">
+        <div class="slot-title">Discussion &amp; Networking (Session I)</div>
+        <div class="time" data-start="2025-10-19T14:50:00-10:00" data-end="2025-10-19T15:00:00-10:00">2:50 – 3:00 PM HST</div>
+      </div>
+    </section>
+
+    <!-- Paper Session II -->
+    <section id="ps2" class="section tl">
+      <div class="time" data-start="2025-10-19T15:00:00-10:00" data-end="2025-10-19T16:20:00-10:00">3:00 – 4:20 PM HST</div>
+      <h2>Paper Session II — Face and Multimodal Quality Assessment</h2>
+      <p class="subtitle">Each: 8 min talk + 2 min Q&amp;A</p>
+      <ul class="paper-list">
+        <li><strong>MSPT:</strong> A Lightweight Face Image Quality Assessment Method with Multi-stage Progressive Training</li>
+        <li><strong>Efficient Face Image Quality Assessment</strong> via Self-training and Knowledge Distillation</li>
+        <li><strong>RankCORE:</strong> Self-Supervised Ranking-Aware Correlation Optimized Regression for Face Image Quality Assessment</li>
+        <li><strong>A Lightweight Ensemble-Based Face Image Quality Assessment</strong> Method with Correlation-Aware Loss</li>
+        <li><strong>QualiVision:</strong> Multi-Modal Video Quality Assessment with Quality-Aware Fusion and Discriminative Learning Strategies</li>
+        <li><strong>MMF-QE:</strong> Advanced Multi-Modal Fusion for Quality Assessment and Engagement Prediction in User-Generated Short Videos</li>
+        <li><strong>Engagement Prediction of Short Videos</strong> with Large Multimodal Models</li>
+        <li><strong>Exploring MLLM</strong> in Fine-Grained Visual Quality Comparison with Quality Token</li>
+      </ul>
+      <div class="slot">
+        <div class="slot-title">Discussion &amp; Networking (Session II)</div>
+        <div class="time" data-start="2025-10-19T16:20:00-10:00" data-end="2025-10-19T16:30:00-10:00">4:20 – 4:30 PM HST</div>
+      </div>
+    </section>
+
+    <!-- Challenge Highlights -->
+    <section id="challenge" class="section tl">
+      <div class="time" data-start="2025-10-19T16:30:00-10:00" data-end="2025-10-19T17:10:00-10:00">4:30 – 5:10 PM HST</div>
+      <h2>VQualA 2025 Challenge Highlights &amp; Winner Talks</h2>
+      <p class="subtitle">6 tracks × 5 min each + short Q&amp;A</p>
+      <ul class="paper-list">
+        <li><strong>ISRGC-Q:</strong> Image Super-Resolution Generated Content Quality Assessment Challenge</li>
+        <li><strong>FIQA:</strong> Face Image Quality Assessment Challenge</li>
+        <li><strong>EVQA-SnapUGC:</strong> Engagement Prediction for Short Videos Challenge</li>
+        <li><strong>Visual Quality Comparison</strong> for Large Multimodal Models Challenge</li>
+        <li><strong>DIQA:</strong> Document Image Enhancement Quality Assessment Challenge</li>
+        <li><strong>GenAI-Bench AIGC Video Quality Assessment Challenge (Track I)</strong></li>
+      </ul>
+    </section>
+
+    <!-- Closing Remarks -->
+    <section id="closing" class="section tl">
+      <div class="time" data-start="2025-10-19T17:10:00-10:00" data-end="2025-10-19T17:15:00-10:00">5:10 – 5:15 PM HST</div>
+      <h2>Closing Remarks</h2>
+      <p class="subtitle">Acknowledgements to invited speaker, sponsors, participants, and organizing committee</p>
+    </section>
+
+    <footer>
+      <p>All times initially shown in <abbr title="Hawaii–Aleutian Standard Time">HST</abbr>. Toggle to view in your local time. Print-friendly and mobile-ready.</p>
+    </footer>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px;">
+      <a class="btn" href="#opening" aria-label="Jump to first session">
+        <!-- play icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Start here
+      </a>
+      <a class="btn" href="#challenge" aria-label="Jump to challenge highlights">
+        <!-- trophy icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17 3H7v2H4v3a5 5 0 005 5h.08A6 6 0 0011 17H8v2h8v-2h-3a6 6 0 001.92-4H16a5 5 0 005-5V5h-3V3zM6 8V7h1V5h10v2h1v1a3 3 0 01-3 3h-6A3 3 0 016 8z"/></svg>
+        Highlights
+      </a>
+    </div>
+  </main>
+
+  <a href="#top" class="to-top btn" id="toTop" aria-label="Back to top">
+    <!-- arrow up -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-7 7h4v9h6v-9h4z"/></svg>
+    Top
+  </a>
+
+  <script>
+    // Helper: format a date range in the user's locale
+    function formatRange(start, end){
+      const opts={ hour: 'numeric', minute: '2-digit' };
+      return `${start.toLocaleTimeString([], opts)} – ${end.toLocaleTimeString([], opts)}`;
+    }
+
+    // Convert all .time blocks based on the toggle
+    const toggle = document.getElementById('localToggle');
+    const timeBlocks = Array.from(document.querySelectorAll('.time'));
+    const tzSpan = document.querySelector('#time-line .tz');
+
+    function updateTimes(){
+      const useLocal = toggle.checked;
+      timeBlocks.forEach(el => {
+        const s = new Date(el.dataset.start);
+        const e = new Date(el.dataset.end);
+        const label = formatRange(s, e) + (useLocal ? ` ${Intl.DateTimeFormat().resolvedOptions().timeZone}` : ' HST');
+        el.textContent = label;
+      });
+      if (tzSpan){ tzSpan.textContent = useLocal ? `(${Intl.DateTimeFormat().resolvedOptions().timeZone})` : 'HST'; }
+    }
+
+    toggle.addEventListener('change', updateTimes);
+    // Initialize from data-* into the top summary line, too
+    (function init(){
+      // Set the top summary line end time to 5:15 PM to match closing remarks
+      updateTimes();
+    })();
+  
+
+    // Scrollspy for nav pills & back-to-top toggle
+    const sections = Array.from(document.querySelectorAll('section.section'));
+    const navLinks = Array.from(document.querySelectorAll('nav .nav-pill'));
+    const toTop = document.getElementById('toTop');
+
+    const spy = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const id = '#' + entry.target.id;
+          navLinks.forEach(a=> a.classList.toggle('active', a.getAttribute('href')===id));
+        }
+      })
+    },{ rootMargin: '-40% 0px -55% 0px', threshold: [0, 1] });
+
+    sections.forEach(sec=> spy.observe(sec));
+
+    window.addEventListener('scroll', ()=>{
+      const show = window.scrollY > 600;
+      if(toTop) toTop.classList.toggle('show', show);
+    });
+  </script>
+</body>
+</html>
