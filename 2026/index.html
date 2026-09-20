@@ -4,636 +4,410 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>VQualA 2026: Human- and Machine-Aligned Visual Quality Assessment Challenge</title>
-
-  <!-- Reuse the stylesheet from the main VQualA website -->
   <link rel="stylesheet" href="../style.css">
-
-  <meta name="description"
-        content="VQualA 2026: Human- and Machine-Aligned Visual Quality Assessment Challenge, supported by the IEEE Signal Processing Society Challenge Program.">
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <h1>VQualA 2026</h1>
-    <p style="font-size: 2em;">
-      Human- and Machine-Aligned Visual Quality Assessment Challenge
-    </p>
-    <p style="font-size: 1.5em;">
-      IEEE Signal Processing Society Challenge Program
-    </p>
-  </div>
-</header>
+  <header>
+    <div class="container">
+      <h1>Visual Quality Assessment Challenge (VQualA)</h1>
+      <p style="font-size: 2em;">IEEE SPS Challenge Program 2026</p>
+      <p style="font-size: 2em;">Human- and Machine-Aligned Visual Quality Assessment</p>
+    </div>
+  </header>
 
-
-<nav>
-  <div class="container">
-    <ul>
-      <li style="font-size: 22px;"><a href="#about">About</a></li>
-      <li style="font-size: 22px;"><a href="#tracks">Challenge Tracks</a></li>
-      <li style="font-size: 22px;"><a href="#participation">Participation</a></li>
-      <li style="font-size: 22px;"><a href="#dates">Important Dates</a></li>
-      <li style="font-size: 22px;"><a href="#awards">Awards</a></li>
-      <li style="font-size: 22px;"><a href="#organizers">Organizers</a></li>
-      <li style="font-size: 22px;"><a href="#sponsors">Sponsors</a></li>
-    </ul>
-  </div>
-</nav>
-
-
-<div class="container">
-
-  <!-- VQualA Logo -->
-  <div class="logo-container">
-    <img src="../img/logo2.png" alt="VQualA Logo">
-  </div>
-
-
-  <!-- =========================================================
-       ABOUT
-       ========================================================= -->
-
-  <section id="about">
-
-    <h2>About VQualA 2026</h2>
-
-    <p>
-      <strong>VQualA 2026: Human- and Machine-Aligned Visual Quality
-      Assessment Challenge</strong> aims to advance reliable,
-      interpretable, and human- and machine-aligned visual quality
-      intelligence for next-generation AI systems.
-    </p>
-
-    <p>
-      Traditional image and video quality assessment methods have
-      primarily been designed to characterize the perceptual experience
-      of human observers. However, modern AI systems — including embodied
-      agents, autonomous systems, multimodal foundation models, and large
-      vision-language models — have become major consumers of visual data.
-      These systems may exhibit perceptual sensitivities that differ
-      substantially from those of human observers.
-    </p>
-
-    <p>
-      As a result, visual degradations that have limited impact on human
-      perception may significantly affect downstream machine reasoning,
-      navigation, recognition, generation, or decision-making. At the same
-      time, emerging multimodal AI systems increasingly need to understand
-      and reason about visual quality over complex and long-duration
-      visual content.
-    </p>
-
-    <p>
-      VQualA 2026 therefore explores a new generation of visual quality
-      assessment paradigms that jointly consider
-      <strong>human perception, machine perception, and multimodal
-      reasoning</strong>.
-    </p>
-
-    <p>
-      The challenge is organized under the
-      <strong>IEEE Signal Processing Society Challenge Program</strong>
-      and promotes reproducible benchmarking, publicly accessible
-      datasets, standardized evaluation protocols, and open scientific
-      dissemination.
-    </p>
-
-  </section>
-
-
-  <!-- =========================================================
-       CHALLENGE TRACKS
-       ========================================================= -->
-
-  <section id="tracks">
-
-    <h2>Challenge Tracks</h2>
-
-    <p>
-      VQualA 2026 consists of two complementary tracks addressing
-      emerging challenges in machine-centric perception and multimodal
-      visual quality understanding.
-    </p>
-
-
-    <!-- Track 1 -->
-
-    <div class="challenge-item">
-
-      <h3>
-        Track 1 — MPD:
-        Machine-Centric Perceptual Quality Assessment
-      </h3>
-
-      <p>
-        Machine intelligence systems increasingly serve as primary
-        consumers of visual data. However, traditional human-oriented
-        image quality assessment methods cannot fully characterize how
-        visual degradations influence machine perception and downstream
-        intelligent tasks.
-      </p>
-
-      <p>
-        The <strong>MPD (Machine Preference Dataset)</strong> track
-        focuses on machine-centric visual perception, embodied AI
-        sensitivity, and downstream task-aware quality evaluation.
-        Participants will develop methods capable of predicting
-        multi-dimensional quality preferences aligned with machine
-        intelligence requirements.
-      </p>
-
-      <p>
-        <strong>Key topics include:</strong>
-      </p>
-
+  <nav>
+    <div class="container">
       <ul>
-        <li>Machine-centric perceptual quality assessment</li>
-        <li>Task-aware visual quality evaluation</li>
-        <li>Quality assessment for embodied AI</li>
-        <li>Human-machine perceptual alignment</li>
-        <li>Multi-dimensional quality prediction</li>
+        <li style="font-size: 22px;"><a href="#sponsors">Sponsors</a></li>
+        <li style="font-size: 22px;"><a href="#about">About</a></li>
+        <li style="font-size: 22px;"><a href="#challenges">Challenges</a></li>
+        <li style="font-size: 22px;"><a href="#dates">Dates</a></li>
+        <li style="font-size: 22px;"><a href="#organizers">Organizers</a></li>
+        <li style="font-size: 22px;"><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- VQualA Logo -->
+    <div class="logo-container">
+      <img src="../img/logo2.png" alt="VQualA Logo">
+    </div>
+
+
+    <!-- Sponsors -->
+    <section id="sponsors">
+      <h2>Sponsors</h2>
+
+      <div class="sponsor-container">
+        <a href="https://signalprocessingsociety.org/"
+           target="_blank"
+           rel="noopener">
+          <strong style="font-size: 1.5em;">
+            IEEE Signal Processing Society
+          </strong>
+        </a>
+      </div>
+
+      <p style="text-align: center;">
+        VQualA 2026 is supported by the IEEE Signal Processing Society Challenge Program.
+      </p>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+      <h2>About VQualA 2026</h2>
+
+      <p>
+        <strong>VQualA 2026: Human- and Machine-Aligned Visual Quality Assessment Challenge</strong>
+        aims to advance reliable, interpretable, and human- and machine-aligned visual quality
+        intelligence for next-generation AI systems.
+      </p>
+
+      <p>
+        Traditional image and video quality assessment methods have primarily been designed
+        to characterize the perceptual experience of human observers. However, modern AI
+        systems, including embodied agents, autonomous systems, multimodal foundation models,
+        and large vision-language models, have become major consumers of visual data.
+        These systems may exhibit perceptual sensitivities that differ substantially from
+        those of human observers.
+      </p>
+
+      <p>
+        As a result, visual degradations that have limited impact on human perception may
+        significantly affect downstream machine reasoning, navigation, recognition,
+        generation, or decision-making. At the same time, emerging multimodal AI systems
+        increasingly need to understand and reason about visual quality over complex and
+        long-duration visual content.
+      </p>
+
+      <p>
+        VQualA 2026 therefore explores a new generation of visual quality assessment paradigms
+        that jointly consider <strong>human perception, machine perception, and multimodal
+        reasoning</strong>.
+      </p>
+
+      <p>
+        The challenge is organized under the
+        <strong>IEEE Signal Processing Society Challenge Program</strong> and promotes
+        reproducible benchmarking, publicly accessible datasets, standardized evaluation
+        protocols, and open scientific dissemination.
+      </p>
+
+    </section>
+
+
+    <!-- Challenges -->
+    <section id="challenges">
+
+      <h2>VQualA 2026 Challenges</h2>
+
+      <ul class="challenge-list">
+
+        <li class="challenge-item">
+
+          <a href="https://www.codabench.org/competitions/18184/"
+             target="_blank"
+             rel="noopener">
+            MPD: Machine-oriented Image Quality Assessment Challenge
+          </a>
+
+          <p>
+            This track focuses on machine-centric perceptual quality assessment for
+            intelligent agents and embodied AI systems. It investigates how visual
+            distortions affect machine perception and downstream intelligent tasks,
+            with an emphasis on machine-oriented quality prediction and task-aware
+            perceptual evaluation.
+          </p>
+
+          <p>
+            Participants will develop methods capable of predicting multi-dimensional
+            quality preferences aligned with machine intelligence requirements.
+          </p>
+
+          <p>
+            <strong>Competition page:</strong>
+            <a href="https://www.codabench.org/competitions/18184/"
+               target="_blank"
+               rel="noopener">
+              Codabench
+            </a>
+          </p>
+
+        </li>
+
+
+        <li class="challenge-item">
+
+          <a href="https://www.codabench.org/competitions/18132/"
+             target="_blank"
+             rel="noopener">
+            LongVQU-Eval: Long-Term Video Quality Understanding Evaluation
+          </a>
+
+          <p>
+            This track evaluates the ability of large vision-language models to understand,
+            reason about, and explain perceptual quality degradations across long-duration
+            videos.
+          </p>
+
+          <p>
+            Participants will address challenges including temporal distortion localization,
+            cross-event quality reasoning, distortion attribution, and holistic long-video
+            perceptual understanding.
+          </p>
+
+          <p>
+            <strong>Competition page:</strong>
+            <a href="https://www.codabench.org/competitions/18132/"
+               target="_blank"
+               rel="noopener">
+              Codabench
+            </a>
+          </p>
+
+        </li>
+
       </ul>
 
       <p>
-        <strong>Dataset and resources:</strong>
-        <a href="https://github.com/lcysyzxdxc/MPD"
-           target="_blank" rel="noopener">
-          MPD
-        </a>
+        Please visit the corresponding competition page to learn more about each challenge,
+        access the competition materials, and participate.
       </p>
 
-    </div>
+    </section>
 
 
-    <!-- Track 2 -->
+    <!-- Important Dates -->
+    <section id="dates">
 
-    <div class="challenge-item">
-
-      <h3>
-        Track 2 — LongVQU-Eval:
-        Long-Video Quality Understanding and Reasoning
-      </h3>
+      <h2>Important Dates</h2>
 
       <p>
-        The <strong>LongVQU-Eval</strong> track investigates the ability
-        of large vision-language models to understand, reason about, and
-        explain perceptual quality degradations across long-duration
-        videos.
+        The participants' submissions will be evaluated on hidden test sets using
+        track-specific evaluation protocols and metrics.
       </p>
 
-      <p>
-        Unlike conventional video quality assessment, this track requires
-        models to reason across extended temporal contexts and identify
-        when, where, and why perceptual quality changes occur.
-      </p>
+      <h3>Challenge Timeline</h3>
+
+      <ul>
+        <li>
+          <strong>Challenge launch:</strong>
+          June 15, 2026
+        </li>
+
+        <li>
+          <strong>Submission deadline:</strong>
+          July 15, 2026
+        </li>
+
+        <li>
+          <strong>Evaluation and verification:</strong>
+          July 16-29, 2026
+        </li>
+
+        <li>
+          <strong>Final results and winners announced:</strong>
+          July 30, 2026
+        </li>
+
+        <li>
+          <strong>Post-challenge:</strong>
+          Challenge overview paper and dissemination activities
+        </li>
+      </ul>
+
+    </section>
+
+
+    <!-- Organizers -->
+    <section id="organizers">
+
+      <h2>List of Organizers</h2>
+
+      <div class="organizers-grid">
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <a href="https://weizhou-geek.github.io/"
+               target="_blank"
+               style="font-size: 1.2em;">
+              <strong>Chris Wei Zhou</strong>
+            </a>
+            <br>
+            Cardiff University<br>
+            UK<br>
+            <a href="mailto:zhouw26@cardiff.ac.uk">
+              zhouw26@cardiff.ac.uk
+            </a>
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <strong style="font-size: 1.2em;">
+              Chunyi Li
+            </strong>
+            <br>
+            Nanyang Technological University<br>
+            Singapore
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <strong style="font-size: 1.2em;">
+              Arpita Nema
+            </strong>
+            <br>
+            Nanyang Technological University<br>
+            Singapore
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <a href="https://h4nwei.github.io/"
+               target="_blank"
+               style="font-size: 1.2em;">
+              <strong>Hanwei Zhu</strong>
+            </a>
+            <br>
+            Nanyang Technological University<br>
+            Singapore
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <strong style="font-size: 1.2em;">
+              Weisi Lin
+            </strong>
+            <br>
+            Nanyang Technological University<br>
+            Singapore
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <strong style="font-size: 1.2em;">
+              Zicheng Zhang
+            </strong>
+            <br>
+            Shanghai Artificial Intelligence Laboratory<br>
+            China
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&infoid=153&flag=153"
+               target="_blank"
+               style="font-size: 1.2em;">
+              <strong>Guangtao Zhai</strong>
+            </a>
+            <br>
+            Shanghai Jiao Tong University<br>
+            China
+          </div>
+        </div>
+
+
+        <div class="organizer">
+          <div class="org-info">
+            <a href="https://hadiamirpour.github.io/"
+               target="_blank"
+               style="font-size: 1.2em;">
+              <strong>Hadi Amirpour</strong>
+            </a>
+            <br>
+            University of Klagenfurt<br>
+            Austria
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- Awards -->
+    <section id="awards">
+
+      <h2>Awards</h2>
 
       <p>
-        Participants will address challenges including temporal distortion
-        localization, cross-event quality reasoning, distortion
-        attribution, and holistic long-video perceptual understanding.
-      </p>
-
-      <p>
-        <strong>Key topics include:</strong>
+        VQualA 2026 is supported by the IEEE Signal Processing Society Challenge Program.
+        The challenge includes a total prize pool of <strong>USD 5,000</strong>.
       </p>
 
       <ul>
-        <li>Long-context video quality understanding</li>
-        <li>Temporal quality reasoning</li>
-        <li>Distortion localization and attribution</li>
-        <li>Large vision-language models for quality assessment</li>
-        <li>Interpretable perceptual quality reasoning</li>
+
+        <li>
+          <strong>Overall Best Challenge Solution:</strong>
+          USD 2,000
+        </li>
+
+        <li>
+          <strong>Best Student Team:</strong>
+          USD 1,500
+        </li>
+
+        <li>
+          <strong>Best Reproducible Method:</strong>
+          USD 1,000
+        </li>
+
+        <li>
+          <strong>Best Open-Source Contribution:</strong>
+          USD 500
+        </li>
+
       </ul>
 
+    </section>
+
+
+    <!-- Previous Edition -->
+    <section id="previous">
+
+      <h2>Previous Edition</h2>
+
       <p>
-        <strong>Dataset and resources:</strong>
-        <a href="https://longvqu-eval.github.io/"
-           target="_blank" rel="noopener">
-          LongVQU-Eval
+        The first VQualA was held in conjunction with ICCV 2025.
+      </p>
+
+      <p>
+        <a href="https://vquala.github.io/"
+           target="_blank"
+           rel="noopener">
+          VQualA at ICCV 2025
         </a>
       </p>
 
-    </div>
+    </section>
 
-  </section>
+  </div>
 
 
-  <!-- =========================================================
-       PARTICIPATION
-       ========================================================= -->
-
-  <section id="participation">
-
-    <h2>Participation</h2>
-
-    <p>
-      VQualA 2026 is open to researchers, students, and practitioners
-      worldwide. Participants may join individually or as teams.
-    </p>
-
-    <p>
-      The challenge will be hosted through
-      <strong>IEEE DataPort</strong>, with supplementary GitHub
-      repositories and benchmark webpages providing datasets, baseline
-      implementations, evaluation scripts, starter kits, and submission
-      instructions.
-    </p>
-
-    <p>
-      Participants will submit predictions, reasoning outputs, method
-      descriptions, and reproducibility materials according to the
-      requirements of each track.
-    </p>
-
-    <p>
-      Evaluation will use hidden test sets and standardized protocols.
-      Track-specific metrics will evaluate prediction performance,
-      ranking consistency, temporal reasoning, distortion attribution,
-      and explanation quality as appropriate.
-    </p>
-
-
-    <!-- Replace # with the IEEE DataPort challenge URL once available -->
-
-    <div style="text-align: center; margin-top: 1.5em;">
-
-      <a href="#"
-         style="
-           display: inline-block;
-           background-color: #0066cc;
-           color: #fff;
-           text-decoration: none;
-           font-weight: bold;
-           padding: 0.75em 1.5em;
-           border-radius: 999px;
-           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-           transition: background-color 0.3s ease, transform 0.2s ease;
-         "
-         onmouseover="
-           this.style.backgroundColor='#005bb5';
-           this.style.transform='translateY(-2px)';
-         "
-         onmouseout="
-           this.style.backgroundColor='#0066cc';
-           this.style.transform='translateY(0)';
-         ">
-        Participate via IEEE DataPort
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       IMPORTANT DATES
-       ========================================================= -->
-
-  <section id="dates">
-
-    <h2>Important Dates</h2>
-
-    <p>
-      The VQualA 2026 challenge will run from June to July 2026.
-    </p>
-
-    <h3>Challenge Timeline</h3>
-
-    <ul>
-      <li>
-        <strong>Challenge launch:</strong>
-        June 15, 2026
-      </li>
-
-      <li>
-        <strong>Submission deadline:</strong>
-        July 15, 2026
-      </li>
-
-      <li>
-        <strong>Evaluation and verification:</strong>
-        July 16–29, 2026
-      </li>
-
-      <li>
-        <strong>Results and winners announced:</strong>
-        July 30, 2026
-      </li>
-
-      <li>
-        <strong>Post-challenge:</strong>
-        Challenge overview paper and dissemination activities
-      </li>
-    </ul>
-
-  </section>
-
-
-  <!-- =========================================================
-       AWARDS
-       ========================================================= -->
-
-  <section id="awards">
-
-    <h2>Awards</h2>
-
-    <p>
-      VQualA 2026 is supported by the
-      <strong>IEEE Signal Processing Society Challenge Program</strong>.
-      A total prize pool of <strong>USD 5,000</strong> is planned for
-      challenge awards.
-    </p>
-
-    <ul>
-      <li>
-        <strong>Overall Best Challenge Solution:</strong>
-        USD 2,000
-      </li>
-
-      <li>
-        <strong>Best Student Team:</strong>
-        USD 1,500
-      </li>
-
-      <li>
-        <strong>Best Reproducible Method:</strong>
-        USD 1,000
-      </li>
-
-      <li>
-        <strong>Best Open-Source Contribution:</strong>
-        USD 500
-      </li>
-    </ul>
-
-  </section>
-
-
-  <!-- =========================================================
-       ORGANIZERS
-       ========================================================= -->
-
-  <section id="organizers">
-
-    <h2>Organizers</h2>
-
-    <div class="organizers-grid">
-
-
-      <!-- Wei Zhou -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <a href="https://weizhou-geek.github.io/"
-             target="_blank"
-             style="font-size: 1.2em;">
-            <strong>Chris Wei Zhou</strong>
-          </a>
-
-          <br>
-
-          Cardiff University<br>
-          UK<br>
-
-          <a href="mailto:zhouw26@cardiff.ac.uk">
-            zhouw26@cardiff.ac.uk
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- Chunyi Li -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <strong style="font-size: 1.2em;">
-            Chunyi Li
-          </strong>
-
-          <br>
-
-          Nanyang Technological University<br>
-          Singapore
-
-        </div>
-
-      </div>
-
-
-      <!-- Arpita Nema -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <strong style="font-size: 1.2em;">
-            Arpita Nema
-          </strong>
-
-          <br>
-
-          Nanyang Technological University<br>
-          Singapore
-
-        </div>
-
-      </div>
-
-
-      <!-- Hanwei Zhu -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <a href="https://h4nwei.github.io/"
-             target="_blank"
-             style="font-size: 1.2em;">
-            <strong>Hanwei Zhu</strong>
-          </a>
-
-          <br>
-
-          Nanyang Technological University<br>
-          Singapore
-
-        </div>
-
-      </div>
-
-
-      <!-- Weisi Lin -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <strong style="font-size: 1.2em;">
-            Weisi Lin
-          </strong>
-
-          <br>
-
-          Nanyang Technological University<br>
-          Singapore
-
-        </div>
-
-      </div>
-
-
-      <!-- Zicheng Zhang -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <strong style="font-size: 1.2em;">
-            Zicheng Zhang
-          </strong>
-
-          <br>
-
-          Shanghai Artificial Intelligence Laboratory<br>
-          China
-
-        </div>
-
-      </div>
-
-
-      <!-- Guangtao Zhai -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&infoid=153&flag=153"
-             target="_blank"
-             style="font-size: 1.2em;">
-            <strong>Guangtao Zhai</strong>
-          </a>
-
-          <br>
-
-          Shanghai Jiao Tong University<br>
-          China
-
-        </div>
-
-      </div>
-
-
-      <!-- Hadi Amirpour -->
-
-      <div class="organizer">
-
-        <div class="org-info">
-
-          <a href="https://hadiamirpour.github.io/"
-             target="_blank"
-             style="font-size: 1.2em;">
-            <strong>Hadi Amirpour</strong>
-          </a>
-
-          <br>
-
-          University of Klagenfurt<br>
-          Austria
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       SPONSORS
-       ========================================================= -->
-
-  <section id="sponsors">
-
-    <h2>Sponsor</h2>
-
-    <div class="sponsor-container">
-
-      <!--
-        Add the official IEEE Signal Processing Society logo here.
-
-        Recommended location:
-        2026/img/ieee-sps-logo.png
-
-        Then change the src below to:
-        img/ieee-sps-logo.png
-      -->
-
-      <a href="https://signalprocessingsociety.org/"
-         target="_blank"
-         rel="noopener">
-
-        <strong style="font-size: 1.5em;">
-          IEEE Signal Processing Society
-        </strong>
-
-      </a>
-
-    </div>
-
-    <p style="text-align: center;">
-      VQualA 2026 is supported by the
-      IEEE Signal Processing Society Challenge Program.
-    </p>
-
-  </section>
-
-
-  <!-- =========================================================
-       PREVIOUS EDITION
-       ========================================================= -->
-
-  <section id="previous">
-
-    <h2>Previous Edition</h2>
-
-    <p>
-      The first VQualA was held in conjunction with
-      <strong>ICCV 2025</strong>.
-    </p>
-
-    <p>
-      <a href="https://vquala.github.io/"
-         target="_blank"
-         rel="noopener">
-        VQualA @ ICCV 2025
-      </a>
-    </p>
-
-  </section>
-
-
-</div>
-
-
-<footer>
-
-  <p>
-    &copy; 2026 VQualA Challenge Organizers
-  </p>
-
-</footer>
+  <footer>
+    <p>&copy; 2026 VQualA Challenge Organizers</p>
+  </footer>
 
 </body>
 
